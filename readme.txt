@@ -8,4 +8,4 @@ Table bileşeni
 Button
 Responsive tasarım
 
-özellikleri kullanılmıştır. Bu nedenle okulda Bootstrap ödevi için uygun bir örnek sayılır.
+özellikleri kullanılmıştır. Bu nedenle okulda sağlkta okyuan Bootstrap ödevi için uygun bir örnek sayılır.
