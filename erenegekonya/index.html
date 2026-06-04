@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sağlıklı Beslenme Merkezi</title>
+<title>Diyet Önerileri</title>
 
 <style>
 *{
@@ -36,7 +36,6 @@ nav{
     text-decoration:none;
     margin-left:25px;
     font-weight:bold;
-    transition:0.3s;
 }
 
 .menu a:hover{
@@ -44,9 +43,8 @@ nav{
 }
 
 .hero{
-    height:85vh;
-    background:linear-gradient(rgba(0,0,0,0.4),
-    rgba(0,0,0,0.4)),
+    height:50vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
     url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1600");
     background-size:cover;
     background-position:center;
@@ -57,27 +55,8 @@ nav{
     color:white;
 }
 
-.hero-content h1{
-    font-size:60px;
-    margin-bottom:15px;
-}
-
-.hero-content p{
-    font-size:22px;
-    margin-bottom:25px;
-}
-
-.btn{
-    background:#4caf50;
-    color:white;
-    padding:15px 35px;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-}
-
-.btn:hover{
-    background:#2e7d32;
+.hero h1{
+    font-size:50px;
 }
 
 .section{
@@ -93,18 +72,18 @@ nav{
 
 .cards{
     display:flex;
-    gap:25px;
     flex-wrap:wrap;
+    gap:25px;
     justify-content:center;
 }
 
 .card{
+    width:300px;
     background:white;
-    width:320px;
     border-radius:15px;
     overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
-    transition:0.3s;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.3s;
 }
 
 .card:hover{
@@ -149,39 +128,38 @@ footer{
 </nav>
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Sağlıklı Beslen, Sağlıklı Yaşa</h1>
-        <p>Doğru beslenme ile daha enerjik ve mutlu bir yaşam.</p>
-        <a href="besinler.html" class="btn">Keşfet</a>
+    <div>
+        <h1>Diyet Önerileri</h1>
+        <p>Sağlıklı yaşam için günlük öneriler</p>
     </div>
 </section>
 
 <section class="section">
-    <h2>Neden Sağlıklı Beslenmeliyiz?</h2>
+    <h2>Popüler Diyet Tavsiyeleri</h2>
 
     <div class="cards">
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=800">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800">
             <div class="card-content">
-                <h3>🍎 Vitamin Deposu</h3>
-                <p>Meyve ve sebzeler bağışıklık sistemini güçlendirir.</p>
+                <h3>🥣 Sağlıklı Kahvaltı</h3>
+                <p>Güne protein ve lif bakımından zengin bir kahvaltı ile başlayın.</p>
             </div>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800">
             <div class="card-content">
-                <h3>🥗 Dengeli Öğünler</h3>
-                <p>Her besin grubundan yeterli miktarda tüketmek önemlidir.</p>
+                <h3>🥗 Dengeli Öğün</h3>
+                <p>Her öğünde sebze, protein ve sağlıklı karbonhidrat bulundurun.</p>
             </div>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=800">
+            <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?w=800">
             <div class="card-content">
                 <h3>💧 Su Tüketimi</h3>
-                <p>Yeterli su tüketimi vücudun sağlıklı çalışmasını sağlar.</p>
+                <p>Günde en az 2 litre su içmeye özen gösterin.</p>
             </div>
         </div>
 
@@ -189,7 +167,7 @@ footer{
 </section>
 
 <footer>
-    <p>© 2026 Sağlıklı Beslenme Merkezi | Web Tasarım Projesi</p>
+    <p>© 2026 Sağlıklı Beslenme Merkezi</p>
 </footer>
 
 </body>
