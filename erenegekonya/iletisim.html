@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>İletişim</title>
+
+<style>
+body{
+font-family:Segoe UI,sans-serif;
+margin:0;
+background:#f4f8f7;
+}
+
+nav{
+background:#1b5e20;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+}
+
+h1{
+text-align:center;
+color:#1b5e20;
+margin:30px;
+}
+
+form{
+background:white;
+width:400px;
+max-width:90%;
+margin:auto;
+padding:30px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+background:#2e7d32;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1b5e20;
+}
+</style>
+
+<script>
+function mesaj(event){
+event.preventDefault();
+alert("Mesajınız başarıyla gönderildi.");
+}
+</script>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Ana Sayfa</a>
+<a href="besinler.html">Besinler</a>
+<a href="diyet.html">Diyet Önerileri</a>
+<a href="iletisim.html">İletişim</a>
+</nav>
+
+<h1>📞 İletişim</h1>
+
+<form onsubmit="mesaj(event)">
+<input type="text" placeholder="Ad Soyad" required>
+
+<input type="email" placeholder="E-posta" required>
+
+<textarea rows="5" placeholder="Mesajınız"></textarea>
+
+<button type="submit">Gönder</button>
+</form>
+
+</body>
+</html>
