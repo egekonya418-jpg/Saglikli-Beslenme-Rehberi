@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sağlıklı Beslenme Rehberi</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#f5f9f8;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2ecc71,#27ae60);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+nav{
+    background:#1f7a4d;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.section-title{
+    text-align:center;
+    color:#27ae60;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#27ae60;
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+.table-section{
+    margin-top:50px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+th{
+    background:#27ae60;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+footer{
+    margin-top:50px;
+    background:#1f7a4d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+button{
+    background:#27ae60;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+button:hover{
+    background:#219150;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🥗 Sağlıklı Beslenme Rehberi</h1>
+    <p>Sağlıklı yaşam için doğru beslenme alışkanlıkları</p>
+</header>
+
+<nav>
+    <a href="#">Ana Sayfa</a>
+    <a href="#">Besinler</a>
+    <a href="#">Diyet Önerileri</a>
+    <a href="#">İletişim</a>
+</nav>
+
+<div class="container">
+
+    <h2 class="section-title">Sağlıklı Beslenmenin Temelleri</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🍎 Meyve ve Sebzeler</h3>
+            <p>Her gün farklı renklerde meyve ve sebzeler tüketmek vitamin ve mineral ihtiyacınızı karşılar.</p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Su Tüketimi</h3>
+            <p>Günde ortalama 2-2,5 litre su içmek vücudun düzenli çalışmasına yardımcı olur.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏃 Fiziksel Aktivite</h3>
+            <p>Sağlıklı beslenmeyi düzenli egzersiz ile desteklemek yaşam kalitesini artırır.</p>
+        </div>
+
+    </div>
+
+    <div class="table-section">
+        <h2 class="section-title">Günlük Beslenme Planı</h2>
+
+        <table>
+            <tr>
+                <th>Öğün</th>
+                <th>Önerilen Besinler</th>
+            </tr>
+
+            <tr>
+                <td>Kahvaltı</td>
+                <td>Süt, yumurta, tam buğday ekmeği, peynir</td>
+            </tr>
+
+            <tr>
+                <td>Öğle</td>
+                <td>Izgara tavuk, salata, yoğurt</td>
+            </tr>
+
+            <tr>
+                <td>Ara Öğün</td>
+                <td>Meyve ve kuruyemiş</td>
+            </tr>
+
+            <tr>
+                <td>Akşam</td>
+                <td>Sebze yemeği, çorba ve salata</td>
+            </tr>
+        </table>
+    </div>
+
+    <center>
+        <button onclick="mesajGoster()">
+            Sağlıklı Yaşam Tavsiyesi
+        </button>
+    </center>
+
+</div>
+
+<footer>
+    <p>© 2026 Sağlıklı Beslenme Rehberi | Web Tasarım Projesi</p>
+</footer>
+
+<script>
+function mesajGoster(){
+    alert("Her gün düzenli su içmeyi ve en az 30 dakika yürüyüş yapmayı unutmayın!");
+}
+</script>
+
+</body>
+</html>
