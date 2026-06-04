@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Beslenme Sayfası</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f8f7;
+    margin:0;
+}
+
+h1{
+    text-align:center;
+    color:#2e7d32;
+    margin:30px;
+}
+
+/* Flexbox Alanı */
+.kartlar{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.kart{
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.kart:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+.kart h2{
+    color:#388e3c;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🥗 Sağlıklı Beslenme</h1>
+
+<div class="kartlar">
+
+    <div class="kart">
+        <h2>🍎 Meyveler</h2>
+        <p>Vitamin ve mineral bakımından zengindir.</p>
+    </div>
+
+    <div class="kart">
+        <h2>🥦 Sebzeler</h2>
+        <p>Lif içerikleri sayesinde sindirimi destekler.</p>
+    </div>
+
+    <div class="kart">
+        <h2>🥛 Süt Ürünleri</h2>
+        <p>Kalsiyum ve protein kaynağıdır.</p>
+    </div>
+
+    <div class="kart">
+        <h2>🌾 Tahıllar</h2>
+        <p>Enerji verir ve uzun süre tok tutar.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
